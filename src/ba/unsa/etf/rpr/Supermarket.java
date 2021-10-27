@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Supermarket {
     private final int maksimalnoUSupermarketu = 1000;
     private ArrayList<Artikl> supermarket = new ArrayList<>();
-    public void dodajArtikl( Artikl artikl) {
+    public void dodajArtikl(Artikl artikl) {
         if(supermarket.size() < maksimalnoUSupermarketu)
             supermarket.add(artikl);
     }
