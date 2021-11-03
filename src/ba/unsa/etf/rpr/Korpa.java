@@ -30,5 +30,4 @@ public class Korpa {
         }
         return izbacenArtikl;
     }
-
 }

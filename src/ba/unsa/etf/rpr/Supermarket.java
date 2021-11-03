@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class Supermarket {
     private final int maksimalnoUSupermarketu = 1000;
     private ArrayList<Artikl> supermarket = new ArrayList<>();
-    public void dodajArtikl(Artikl artikl) {
+    public boolean dodajArtikl(Artikl artikl) {
         if(supermarket.size() < maksimalnoUSupermarketu)
-            supermarket.add(artikl);
+            return supermarket.add(artikl);
+        return false;
     }
     public Artikl[] getArtikli() {
         return supermarket.toArray(new Artikl[0]);
